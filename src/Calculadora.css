@@ -1,0 +1,87 @@
+.corpo {
+    border: 3px solid rgb(255, 255, 255);
+    display: flex;
+    padding: 50px;
+    padding-left: 20px;
+    padding-right: 17px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    background-color: rgb(138, 138, 138);
+    box-shadow: 12px 12px 70px #151625;
+    animation: 4s ease-in-out infinite balanca;
+}
+
+.corpo input{
+    direction: rtl;
+    position: fixed;
+    width: 248px;
+    height: 40px;
+    font-size: 40px;
+    margin-top: -40px;
+}
+
+.botoes {
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 6px;
+}
+
+
+
+.botao-mais {
+    background-color: rgb(143, 0, 0);
+}
+
+.botao-mais:hover {
+    background-color: rgb(107, 1, 1);
+}
+
+.botao-menos {
+    background-color: rgb(98, 0, 255);
+    
+}
+
+.botao-menos:hover {
+    background-color: rgb(68, 0, 176);;
+}
+
+.botao-vezes {
+    background-color: rgb(114, 190, 79);
+}
+
+.botao-vezes:hover {
+    background-color: rgb(88, 149, 60);
+}
+
+.botao-dividir {
+    background-color: rgb(208, 198, 57);
+}
+
+.botao-dividir:hover {
+    background-color: rgb(159, 151, 46);
+}
+
+.botoes button{
+    font-size: 50px;
+    border-radius: 80px;
+    height: 80px;
+    padding: 10px;
+}
+
+.botao-numerico {
+    background-color: #F0F0F0;
+}
+
+.botao-numerico:hover {
+    background-color: rgb(191, 191, 191);
+}
+
+@keyframes balanca {
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+}
